@@ -48,6 +48,4 @@ RUN ln -s '/usr/local/lib/libgpod.so.4.3.2' '/usr/local/lib/libgpod.so.4'
 RUN ln -s '/usr/local/lib/libgpod.so.4.3.2' '/usr/local/lib/libgpod.so'
 ENV PYTHONPATH='/usr/local/lib/python3.11/site-packages/gpod'
 ENV LD_LIBRARY_PATH='/usr/local/lib'
-
-WORKDIR /runtime-py
-ENTRYPOINT ["/usr/bin/python3"]
+WORKDIR /
