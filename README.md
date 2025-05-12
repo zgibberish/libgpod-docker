@@ -20,6 +20,24 @@ docker cp 'build_cont:/usr/local/lib/python3.11/site-packages/gpod' 'build/gpod'
 docker rm build_cont
 ```
 
+## Python usage
+
+For runtime dependencies you'll need to install these (debian package names, might be different for your distro)
+
+- python3
+- python3-gi
+- python3-mutagen
+- libgdk-pixbuf-2.0-0
+- libimobiledevice6
+- libgpod
+
+```shell
+PYTHONPATH=$PYTHONPATH:'path/to/gpod/bindings/module' \
+python test.py
+```
+
+### Docker
+
 Example of running a Python script inside a libgpod environment container (see `test.py` and `Dockerfile` for more details). This is just something I quickly put together to test stuff, so it might look a little janky.
 
 ```shell

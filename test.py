@@ -1,5 +1,6 @@
 import gpod
 
+#mnt = "/run/media/gibberish/GOOBER"
 mnt = "/ipodmnt"
 itdb = gpod.itdb_parse(mnt, None)
 num_tracks = gpod.itdb_tracks_number(itdb)
