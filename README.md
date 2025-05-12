@@ -1,8 +1,8 @@
 # libgpod-docker
 
-Docker container for building the libgpod library (+Python bindings)
+Docker container for building the libgpod library (+Python3 bindings).
 
-I'm using john8675309's fork that has better support for python3
+I'm using john8675309's fork that's supposed to have better support for python3
 
 ```shell
 git clone https://github.com/john8675309/libgpod-0.8.3
@@ -22,7 +22,7 @@ docker buildx build -t libgpod --target build .
 
 You can start up a `libgpod` container, and use `docker cp` to copy them out.
 
-This runs a Python script from the host inside a libgpod environment container
+Example of running a Python script from the host inside a `libgpod` environment container (see `test.py` for more details)
 
 ```shell
 docker run \
