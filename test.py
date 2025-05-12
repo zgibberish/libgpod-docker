@@ -1,9 +1,10 @@
 import gpod
 
-#mnt = "/run/media/gibberish/GOOBER"
 mnt = "/ipodmnt"
+itdb = gpod.Database(mnt)
+print(itdb)
+for track in itdb:
+    print(track)
+
 itdb = gpod.itdb_parse(mnt, None)
-num_tracks = gpod.itdb_tracks_number(itdb)
-num_playlists = gpod.itdb_playlists_number(itdb)
-print(f"device has {num_tracks} tracks")
-print(f"device has {num_playlists} playlists")
+print(itdb)
