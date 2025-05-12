@@ -8,13 +8,13 @@ I'm using john8675309's fork that's supposed to have better support for python3
 git clone https://github.com/john8675309/libgpod-0.8.3
 ```
 
-Build the image (you can either buildx or the legacy builder)
+Build the image
 
 ```shell
-# build and runtime image
-docker buildx build -t libgpod .
+# build and runtime
+docker build -t libgpod .
 # only build environment
-docker buildx build -t libgpod --target build .
+docker build -t libgpod --target build .
 ```
 
 - Compiled libs are inside the image at `/usr/local/libs/libgpod*`
