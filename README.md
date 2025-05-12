@@ -20,7 +20,7 @@ docker cp 'build_cont:/usr/local/lib/python3.11/site-packages/gpod' 'build/gpod'
 docker rm build_cont
 ```
 
-Example of running a Python script inside a libgpod environment container (see `test.py` and `Dockerfile` for more details). This is just something I quickly put together to quickly test stuff, so it might look a little janky.
+Example of running a Python script inside a libgpod environment container (see `test.py` and `Dockerfile` for more details). This is just something I quickly put together to test stuff, so it might look a little janky.
 
 ```shell
 docker build -t libgpod-runtime-py --target runtime-py .
