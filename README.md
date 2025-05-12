@@ -32,7 +32,7 @@ For runtime dependencies you'll need to install these (debian package names, mig
 - libgpod
 
 ```shell
-PYTHONPATH=$PYTHONPATH:'path/to/gpod/bindings/module' \
+PYTHONPATH=$PYTHONPATH:'path/to/parent/of/gpod/module' \
 python test.py
 ```
 
